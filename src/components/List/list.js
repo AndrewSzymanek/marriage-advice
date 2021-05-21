@@ -3,18 +3,24 @@ import React, { Component } from "react";
 class List extends Component {
   constructor(props) {
     super(props);
-    this.state = { apiResponse: "" };
+    this.state = { apiResponse: [] };
   }
 
-  makeAPICall() {
-    fetch("http://localhost:8000/notes/60a5844eb703366c0520ca5d")
+  makeGetRequest() {
+    fetch("http://localhost:9000/getAdvice")
       .then((res) => res.text())
       .then((res) => this.setState({ apiResponse: res }));
   }
 
   componentDidMount() {
-    this.makeAPICall();
+    this.makeGetRequest();
   }
+
+  // dataTable() {
+  //   return this.state.apiResponse.map((data, i) => {
+  //     //map the response with a class?
+  //   });
+  // }
 
   render() {
     return (
