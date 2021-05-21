@@ -16,17 +16,12 @@ class List extends Component {
     this.makeGetRequest();
   }
 
-  // dataTable() {
-  //   return this.state.apiResponse.map((data, i) => {
-  //     //map the response with a class?
-  //   });
-  // }
-
   render() {
     return (
       <div>
-        <h1>I am a list page</h1>
+        <h1>Marriage Advice</h1>
         <p>{this.state.apiResponse}</p>
+        {console.log(JSON.stringify(this.state.apiResponse))}
       </div>
     );
   }

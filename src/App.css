@@ -1,10 +1,43 @@
 .App {
   text-align: center;
+  font-family: "Newsreader", serif;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-brand :hover {
+  color: black;
+}
+
+.navbar-brand a {
+  color: black;
+}
+
+.navbar-nav a {
+  color: black;
+}
+
+.navbar-nav a :hover {
+  color: black;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.main-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+textarea.form-control {
+  width: 50%;
+  margin-left: 25%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -25,7 +58,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: black;
 }
 
 @keyframes App-logo-spin {

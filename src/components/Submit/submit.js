@@ -24,11 +24,15 @@ class Submit extends Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
+  // clearForm = (e) => {
+  //   this.setState({ body: "" });
+  // };
+
   render() {
     const { body } = this.state;
     return (
       <div>
-        <h1>I am a submit page</h1>
+        <h1>What's your secret to a happy marriage?</h1>
         <Form onSubmit={this.handleSubmit}>
           <Form.Group>
             <Form.Label>Submit your advice for the newlyweds!</Form.Label>
